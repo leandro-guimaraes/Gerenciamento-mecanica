@@ -15,7 +15,7 @@ box-sizing: border-box;
 }
 
 .wrapper{
-    padding: 0 0 0 7rem;
+    padding: 0 0 0 0rem;
 }
 a,li{
     list-style: none;

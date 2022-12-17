@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/servico.css">
+    <title>servicos</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+           <a id="logo"><img src="img/logo_heimdall.png" alt="logo"></a>
+            <nav class="nav">
+                <ul>
+                    <li ><img src="img/perfil_pessoa.png" alt=""><a href="../inicio/index.html">Login</a></li>
+                    <li ><img src="img/serviços.png" alt=""><a href="../servicos/servicos.html">Serviços</a></li>
+                    <li ><img src="img/saida.png" alt=""><a href="saidas.html">Saidas</a></li>
+                    <li ><img src="img/entrada.png" alt=""><a href="entradas.html">Entradas</a></li>
+                </ul>
+            </nav>
+            <div class="almoxarifado">
+                <button>Almoxarifado</button>
+            </div>
+        </header>
+     
+
+
+
+        <div class="controlador">
+            <div class="cabecalho">
+              <h1>Serviços Oficina</h1>
+              <a href="#add">Adicionar</a>
+            </div>
+            <div class="menu">
+              <a href="#show-all" class="selected">Tudo</a>
+              <a href="#entradas">Entradas</a>
+              <a href="#saidas">Saídas</a>
+            </div>
+            <ul class="listagem cabecalho-listagem">
+              <li>
+                <div class="data">Data</div>
+                <div class="nome">Nome</div>
+                <div class="valor">Valor</div>
+                <div class="tipo">Tipo</div>
+                <div class="ferramentas">
+                  Ferramentas
+                </div></li>
+            </ul>
+            <ul class="listagem movimentacoes">
+              <li>
+                <div class="data">01/06</div>
+                <div class="nome">Salário</div>
+                <div class="valor">R$ 1000,00</div>
+                <div class="tipo" data-operacao="sum">Entrada - Mensal</div>
+                <div class="ferramentas">
+                  <a href="#edit">Editar</a>
+                  <a href="#delete">Excluir</a>
+                </div>
+              </li>
+                  <li>
+                <div class="data">01/06</div>
+                <div class="nome">Passagem Ida</div>
+                <div class="valor">R$ 2,80</div>
+                <div class="tipo">Saída - Diário</div>
+                <div class="ferramentas">
+                  <a href="#edit">Editar</a>
+                  <a href="#delete">Excluir</a>
+                </div>
+              </li>
+              <li>
+                <div class="data">01/06</div>
+                <div class="nome">Passagem Volta</div>
+                <div class="valor">R$ 2,80</div>
+                <div class="tipo">Saída - Diário</div>
+                <div class="ferramentas">
+                  <a href="#edit">Editar</a>
+                  <a href="#delete">Excluir</a>
+                </div>
+              </li>
+              <li>
+                <div class="data">01/06</div>
+                <div class="nome">Passagem Colégio</div>
+                <div class="valor">R$ 3,15</div>
+                <div class="tipo">Saída - Diário</div>
+                <div class="ferramentas">
+                  <a href="#edit">Editar</a>
+                  <a href="#delete">Excluir</a>
+                </div>
+              </li>
+            </ul>
+            <div class="total">
+              <h2>Total</h2>
+              <small>R$ </small>
+              <span></span>
+            </div>
+          </div>
+          
+          
+          <div class="dialogs">
+            <section class="add dialogs-container">
+              <h2>Adicionar Movimetação</h2>
+              <form action="POST" name="addMovimentacao">
+                <label>
+                  <input name="date" type="date" placeholder="Data" data-optional="false">
+                </label>
+                <label>
+                  <input name="name" type="text" placeholder="Nome" data-optional="false">
+                </label>
+                <label>
+                  <input name="money" type="text" placeholder="Valor" data-optional="false" id="mask-money">
+                </label>
+                <label>
+                  <select name="category" id="" data-optional="false">
+                    <option value="">Tipo</option>
+                    <option value="E">Entrada</option>
+                    <option value="S">Saída</option>
+                  </select>
+                </label>
+                <label>
+                  <select name="periodicity" id="">
+                    <option value="">Periodicidade</option>
+                    <option value="D">Diário</option>
+                    <option value="S">Semanal</option>
+                    <option value="M">Mensal</option>
+                    <option value="A">Anual</option>
+                  </select>
+                </label>
+                <button type="submit">Adicionar</button>
+              </form>
+            </section>
+            <section class="edit dialogs-container">
+              <h2>Editar Movimetação</h2>
+              <form action="#" name="editMovimentacao">
+                <label>
+                  <input name="date" type="date" placeholder="Data" data-optional="false">
+                </label>
+                <label>
+                  <input name="name" type="text" placeholder="Nome" data-optional="false">
+                </label>
+                <label>
+                  <input name="money" placeholder="Valor" data-optional="false" id="mask-money">
+                </label>
+                <label>
+                  <select name="category" id="" data-optional="false">
+                    <option value="">Tipo</option>
+                    <option value="E">Entrada</option>
+                    <option value="S">Saída</option>
+                  </select>
+                </label>
+                <label>
+                  <select name="periodicity" id="">
+                    <option value="">Periodicidade</option>
+                    <option value="D">Diário</option>
+                    <option value="S">Semanal</option>
+                    <option value="M">Mensal</option>
+                    <option value="A">Anual</option>
+                  </select>
+                </label>
+                <button type="submit">Atualizar</button>
+              </form>
+            </section>
+            <section class="delete dialogs-container">
+            <h2>Você tem certeza?</h2>
+              <a href="#delete-sure">Sim</a>
+              <a href="#close">Não</a>
+            </section>
+        </div>
+
+
+
+        <script src="src/script.js"></script>
+
+    </div>
+</body>
+</html>

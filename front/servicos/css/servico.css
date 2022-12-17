@@ -1,0 +1,224 @@
+*,*::after*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+    
+    :root{
+        --cor-primaria: #87CEFA;
+        --cor-secundaria:#ADD8E6;
+        --cor-tercaria: #3085a1;
+        font-size: 17px;
+        font-family: 'Poppins',sans-serif;
+        background-image: url(../img/back.jpg);
+        background-repeat: no-repeat;
+    }
+    
+    .wrapper{
+        padding: 0 0 0 0rem;
+    }
+    a,li{
+        list-style: none;
+        text-decoration: none;
+    }
+    .header{
+        background:  #87cefa85;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 5rem;
+    }
+    .header #logo{
+       padding:-4rem;
+    }
+    
+    .header ul{
+        display: flex;
+        gap: 4rem; 
+    }
+    
+    .header a{
+        color: var(--cor-tercaria);
+        padding:  60px 1em 0 1em;
+        
+    }
+    
+    .header .almoxarifado button{
+        background: var(--cor-tercaria);
+        color: var(--cor-secundaria);
+        border: none;
+        padding: 1rem 3rem;
+        font-size: 1.2rem;
+        border-radius: 16px;
+    }
+    
+  /*tabela*/
+
+ 
+  
+  h1 {
+    font-family: "Oswald";
+    font-weight: 900;
+    font-size: 35px;
+  }
+  
+  h2 {
+    font-weight: 900;
+    font-size: 25px;
+  }
+  
+  small {
+    font-size: 12px;
+  }
+  
+  input,
+  select {
+    width: 100%;
+    padding: 6px;
+    font-family: "Oswald";
+    border: 0;
+    border-bottom: 1px solid #000;
+    height: 35px;
+    box-sizing: border-box;
+  }
+  
+  label {
+    float: left;
+    width: 47%;
+    margin-top: 20px;
+    margin-right: 2.5%;
+  }
+
+  
+  .dialogs {
+    display: none;
+  }
+  .dialogs::after {
+    content: "";
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .dialogs.active {
+    display: block;
+  }
+  .dialogs-container {
+    max-width: 580px;
+    width: 100%;
+    margin: 0 auto;
+    display: none;
+    padding: 25px;
+    z-index: 1;
+    box-sizing: border-box;
+    background: #fff;
+    box-shadow: 0px 0px 44px -7px rgba(0, 0, 0, 0.47);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .dialogs-container.active {
+    display: block;
+  }
+  
+  .total {
+    text-align: right;
+    padding: 25px 20px 0;
+  }
+  .total h2 {
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: bottom;
+  }
+  .total small {
+    font-size: 13px;
+    font-weight: 600;
+  }
+  .total span {
+    font-size: 18px;
+  }
+  
+ 
+  
+ 
+  
+  .cabecalho-listagem {
+    font-weight: 500;
+    background: #777;
+    color: #fff;
+    margin-top: 10px;
+    padding-left: 0px;
+    padding-right: 20px;
+  }
+  .cabecalho-listagem div {
+    text-align: center;
+  }
+  
+  .controlador {
+    max-width: 500rem;
+    min-height: 250px;
+    margin: 40px auto;
+    background:  #87cefabb;
+    box-shadow: 0px 0px 44px -7px rgba(0, 0, 0, 0.47);
+    border-radius: 4px;
+    padding: 25px;
+    box-sizing: border-box;
+  }
+  
+  .menu {
+    font-size: 0;
+    margin-top: 30px;
+    width: 100%;
+    border-bottom: 1px solid #000;
+    
+  }
+  .menu a {
+    display: inline-block;
+    color: #000;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 5px 10px;
+    vertical-align: bottom;
+    border: 1px solid #000;
+    margin-bottom: -1px;
+    margin-right: 5px;
+  }
+  .menu a.selected {
+    padding: 8px 12px;
+  }
+  
+  .listagem {
+    font-size: 0;
+  }
+  .listagem li {
+    padding: 10px 0;
+  }
+  .listagem li:nth-child(even) {
+    background: #f9f9f9;
+  }
+  .listagem div {
+    display: inline-block;
+    width: 20%;
+    font-size: 15px;
+    vertical-align: middle;
+  }
+  .listagem .data,
+  .listagem .ferramentas {
+    width: 10%;
+    text-align: center;
+  }
+  .listagem .ferramentas a {
+    display: block;
+  }
+  .listagem .tipo {
+    text-align: center;
+  }
+  .listagem .nome {
+    width: 40%;
+  }
+  
